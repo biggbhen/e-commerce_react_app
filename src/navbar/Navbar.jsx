@@ -1,15 +1,17 @@
 import React from 'react';
 import { Nav } from './navbarStyle';
 import logo from '../assets/logo.svg';
+import cart from '../assets/icon-cart.svg';
+import user from '../assets/image-avatar.png';
 
 const Navbar = () => {
 	return (
 		<Nav>
 			<div>
-				<figure class='logo'>
+				<figure className='logo'>
 					<img src={logo} alt='logo' />
 				</figure>
-				<ul>
+				<ul className='category'>
 					<li>Collection</li>
 					<li>Men</li>
 					<li>Women</li>
@@ -17,7 +19,14 @@ const Navbar = () => {
 					<li>Contact</li>
 				</ul>
 			</div>
-			<div></div>
+			<div>
+				<figure className='cart'>
+					<img src={cart} alt='cart' />
+				</figure>
+				<figure className='user'>
+					<img src={user} alt='user' />
+				</figure>
+			</div>
 		</Nav>
 	);
 };

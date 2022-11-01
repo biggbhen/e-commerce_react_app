@@ -1,5 +1,11 @@
+import Navbar from './navbar/Navbar';
+
 function App() {
-	return <div>heyyy</div>;
+	return (
+		<>
+			<Navbar />
+		</>
+	);
 }
 
 export default App;

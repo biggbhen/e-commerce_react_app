@@ -7,7 +7,7 @@ import user from '../assets/image-avatar.png';
 const Navbar = () => {
 	return (
 		<Nav>
-			<div>
+			<div className='leftSect'>
 				<figure className='logo'>
 					<img src={logo} alt='logo' />
 				</figure>
@@ -19,7 +19,7 @@ const Navbar = () => {
 					<li>Contact</li>
 				</ul>
 			</div>
-			<div>
+			<div className='rightSect'>
 				<figure className='cart'>
 					<img src={cart} alt='cart' />
 				</figure>

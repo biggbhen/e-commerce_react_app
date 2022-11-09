@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-	border: 1px solid red;
+	border-bottom: 1px solid red;
 	margin: auto;
-	width: 80%;
+	width: 70%;
 	padding: 25px;
 	display: flex;
 	justify-content: space-between;
@@ -12,24 +12,35 @@ export const Nav = styled.nav`
 		align-items: center;
 		border: 1px solid blue;
 	}
+	.leftSect {
+		width: 75%;
+	}
+	.rightSect {
+		width: 20%;
+	}
 	.logo {
-		padding-right: 30px;
+		padding-right: 5%;
 	}
 	.category {
+		width: 75%;
 		display: flex;
+		justify-content: space-around;
 		align-items: center;
 	}
 	.category > li {
-		margin-right: 15px;
+		// margin-right: 15px;
 		cursor: pointer;
 	}
 	.cart {
-		margin-right: 20px;
+		width: 25px;
 		cursor: pointer;
 	}
+	.cart > img {
+		width: 100%;
+		height: 100%;
+	}
 	.user {
-		width: 40px;
-		height: 40px;
+		width: 30px;
 		cursor: pointer;
 	}
 	.user img {
